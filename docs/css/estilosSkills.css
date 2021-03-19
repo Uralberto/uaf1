@@ -1,0 +1,667 @@
+:root {
+  --main-color-blue: #2337F1;
+  --color-blue1: #4262F3;
+  --color-blue2: #5E83F5;
+  --color-blue3: #7AA1F7;
+  --color-blue4: #98BDF9;
+  --color-blue5: #B6D4FB;
+  --color-blue6: #D7EAFC;
+  --main-color-darkblue: #272839;
+  --color-darkblue1: #262B59;
+  --color-darkblue2: #252E7D;
+  --color-darkblue3: #24309A;
+  --color-darkblue4: #2433b8;
+  --color-darkblue5: #2335D6;
+  --color-gray1: #F6F3F3;
+  --color-gray2: #e7e4e7;
+  --color-gray3: #B4B3B7;
+  --color-gray4: #919097;
+  --color-gray5: #6E6E78;
+  --color-gray6: #494956;
+}
+
+html {
+  height: 100%;
+  background-color: var(--color-gray1);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #272839;
+  margin: 0 0;
+  z-index: -3;
+  height: 100%;
+}
+
+
+.home {
+  display: grid;
+  grid-template-columns: minmax(auto, 1024px);
+  justify-content: center;
+  padding: 0 15px 0 15px;
+  /* height: 100%; */
+}
+
+.home-container {
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: 60px 1.8fr 1fr;
+  grid-template-areas: "header header header" 
+  "contenedor-lago contenedor-lago contenedor-lago" 
+  "time-height time-height time-height"
+  "queEsTimeHeight queEsTimeHeight contConv"
+  "contAnimatDadAndSkills contAnimatDadAndSkills contAnimatDadAndSkills "
+}
+
+.time-height {
+  background: var(--color-gray2);
+  grid-area: time-height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  padding: 30px 10px 30px 20px;
+}
+
+.queEsTimeHeight {
+  grid-area: queEsTimeHeight;
+  background: var(--color-gray2);
+  padding: 0 20px 0 20px;
+  font-weight: 100px;
+  padding-bottom: 10px;
+}
+
+.timeHeigth-title {
+  margin: 0;
+}
+
+.timeHeight-explicacion {
+  font-size: .8em;
+}
+
+
+.timeHeight-explicacion a {
+  text-decoration: none;
+}
+
+.contenedor-convenciones {
+  height: auto;
+  background: var(--color-gray2);
+  display: grid;
+  grid-area: contConv;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "aspa1x leyenda1"
+    "cucutax leyenda2"
+    "aspasica2x leyenda3"
+    "bogota1x leyenda4"
+    "costax leyenda5"
+    "bogota2x leyenda6"
+    "aruacax leyenda7"
+}
+
+
+.contenedor-convenciones h6 {
+  margin: 0 0 0 0;
+  font-weight: lighter;
+}
+
+
+.aspa1x {
+  grid-area: aspa1x;
+}
+
+.cucutax {
+  grid-area: cucutax;
+}
+
+.aspa2x {
+  grid-area: apas2x;
+}
+
+.bogota1 {
+  grid-area: bogota1;
+}
+
+.costax {
+  grid-area: costax;
+}
+
+.bogota2x {
+  grid-area: bogota2x
+}
+
+.araucax {
+  grid-area: araucax
+}
+
+.leyenda1 {
+  grid-area:leyenda1;
+}
+
+.leyenda2 {
+  grid-area:leyenda2;
+}
+
+.leyenda3 {
+  grid-area:leyenda3;
+}
+
+.leyenda4 {
+  grid-area:leyenda4;
+}
+
+.leyenda5 {
+  grid-area:leyenda5;
+}
+
+.leyenda6 {
+  grid-area:leyenda6;
+}
+
+.leyenda7 {
+  grid-area:leyenda7;
+}
+
+.svg-dim   {
+  position: relative;
+  height: 15px;
+  width: 100%;
+  left: 30%;
+}
+
+.aspa1x {
+  animation: creceTH1 1s linear 4 forwards;
+}
+
+@keyframes creceTH1 {
+  from {
+    stroke-dasharray: 0 750;
+  }
+  to {
+    stroke-dasharray: 750 0;
+    stroke: red;
+    stroke-width: 80;
+  }
+}
+
+.cucutax {
+  animation: creceTH2 1s linear 4 forwards;
+  animation-delay: 1s;
+}
+
+@keyframes creceTH2 {
+  from {
+    stroke-dasharray: 0 100;
+  }
+  to {
+    stroke-dasharray: 100 0;
+    stroke: green;
+    stroke-width: 80;
+  }
+}
+
+.aspa2x {
+  animation: creceTH3 1s linear 4 forwards;
+  animation-delay: 2s;
+}
+
+@keyframes creceTH3 {
+  from {
+    stroke-dasharray: 0 150;
+  }
+  to {
+    stroke-dasharray: 150 0;
+    stroke: blue;
+    stroke-width: 80;
+  }
+}
+
+.bogota1x {
+  animation: creceTH4 1s linear 4 forwards;
+  animation-delay: 3s;
+}
+
+@keyframes creceTH4 {
+  from {
+    stroke-dasharray: 0 400;
+  }
+  to {
+    stroke-dasharray: 400 0;
+    stroke: orange;
+    stroke-width: 80;
+  }
+}
+
+.costax {
+  animation: creceTH5 1s linear 4 forwards;
+  animation-delay: 4s;
+}
+
+@keyframes creceTH5 {
+  from {
+    stroke-dasharray: 0 50;
+  }
+  to {
+    stroke-dasharray: 50 0;
+    stroke: blueviolet;
+    stroke-width: 80;
+  }
+}
+
+.bogota2x {
+  animation: creceTH6 linear 4 forwards;
+  animation-delay: 5s;
+}
+
+@keyframes creceTH6 {
+  from {
+    stroke-dasharray: 0 50;
+  }
+  to {
+    stroke-dasharray: 50 0;
+    stroke: black;
+    stroke-width: 80;
+  }
+}
+
+.araucax {
+  animation: creceTH7 2s linear 2 forwards;
+  animation-delay: 6s;
+}
+
+@keyframes creceTH7 {
+  from {
+    stroke-dasharray: 0 1600;
+  }
+  to {
+    stroke-dasharray: 1600 0;
+    stroke: rgb(1, 65, 31);
+    stroke-width: 80;
+  }
+}
+
+.contAnimatDadAndSkills {
+  grid-area: contAnimatDadAndSkills;
+  display: grid;
+  background: var(--color-gray2);
+  grid-template-columns: 20px 1fr 15px 1fr 2fr;
+  grid-template-rows: 30px 300px auto;
+  grid-template-areas: "caja-vacia caja-vacia caja-vacia caja-vacia caja-vacia" ". containerDad1 . containerDad2  skills " ". queEsDad1 . queEsDad2  skills"
+}
+
+.caja-vacia {
+  grid-area: caja-vacia;
+  border-top: 1px solid rgba(0, 0, 139, 0.171);
+}
+
+.containerDad1 {
+  grid-area: containerDad1;
+  height: 100%;
+  padding: 0 0 0 0;
+  background: var(--color-darkblue1);
+  text-align: left;
+}
+
+.dadSVG1 {
+  position: relative;
+  height: 75%;
+  width: 75%;
+  left: 12%;
+  padding-top: 30px;
+}
+
+.containerDad2 {
+  position: relative;
+  grid-area: containerDad2;
+  height: 100%;
+  padding: 0 0 0 0;
+  background: var(--color-darkblue1);
+  text-align: left;
+}
+
+.dadSVG2 {
+  position: relative;
+  height: 75%;
+  width: 75%;
+  left: 10%;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.queEsDad1 {
+  grid-area: queEsDad1;
+  height: auto;
+}
+
+.queEsDad1 p {
+  grid-area: queEsDad1;
+  font-size: .8em;
+}
+
+.queEsDad2 {
+  grid-area: queEsDad2;
+  height: auto;
+}
+
+.queEsDad2 p {
+  grid-area: queEsDad2;
+  font-size: .8em;
+}
+
+.dadSVG1 path:nth-child(n) {
+  transform-origin: center;
+  animation: dad1 20s ease-in-out forwards;
+}
+
+@keyframes dad1 {
+  0% {
+    fill-opacity: 0;
+    stroke-width: 20;
+    stroke-dasharray: 40;
+  }
+  48% {
+    stroke-width: .1;
+    stroke-dasharray: none;
+    fill-opacity: 1;
+  }
+  52% {
+    fill-opacity: 0;
+    stroke-width: .1;
+    stroke-dasharray: none;
+  }
+  100% {
+    stroke-dasharray: 0;
+    fill-opacity: 1
+  }
+}
+
+.dad path:nth-child(10n) {
+  animation: dad2 8s ease-in-out forwards;
+  animation-delay: 12s;
+}
+
+@keyframes dad2 {
+  0% {
+    fill: none;
+  }
+  100% {
+    stroke-dasharray: 0;
+    fill-opacity: 1
+  }
+}
+
+.skills {
+  grid-area: skills;
+  padding-left: 25px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+}
+
+.skills h4 {
+  font-size: 1.2em;
+  margin-top: 0;
+}
+
+.skills p {
+  font-size: 1em;
+}
+
+
+
+/* Aquí comienza media query para dispositivos pequeños xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+@media screen and (max-width: 768px) {
+  .barraAzul {
+    height: 25px;
+  }
+  .home {
+    display: grid;
+    grid-template-columns: minmax(auto, 1024px);
+    justify-content: center;
+    padding: 0 0 0 0;
+    /* height: 100%; */
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(auto, 768px);
+    justify-content: center;
+    padding: 5px 15px;
+  }
+
+
+  .home-container {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 60px 1fr 1fr;
+    grid-template-areas: "header header header" 
+    "contenedor-lago contenedor-lago contenedor-lago" 
+    "time-height time-height time-height"
+    "queEsTimeHeight queEsTimeHeight contConv"
+    "contAnimatDadAndSkills contAnimatDadAndSkills contAnimatDadAndSkills "
+  }
+
+
+  .logo {
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+  }
+  .logosvg {
+    height: 40px;
+    width: 40px;
+  }
+  .logo:hover {
+    background-image: url("../img/logoCara.png");
+    background-size: 40px;
+    transition: 1s;
+  }
+  .marca {
+    grid-area: marca;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    height: 40px;
+  }
+  .marca h1 {
+    font-size: .8em;
+  }
+  .menu {
+    align-items: center;
+    height: 30px;
+  }
+  .link {
+    font-size: .65em;
+    padding: 0px 2px;
+    bottom: 0;
+  }
+  .contenedor-lago {
+    height: 40px;
+  }
+  .time-height {
+    align-items: center;
+    height: 50px;
+    padding: 0 5px 0px 10px;
+  }
+  
+
+  .contenedor-convenciones {
+    font-size: .4em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+  }
+
+  .queEsTimeHeight {
+    font-size: .5em;
+    padding-bottom: 5px;
+  }
+
+  .contenedor-convenciones h6{
+    height: 10px;
+  }
+
+  .aspa1x {
+    animation: creceTH1 1s linear 4 forwards;
+  }
+  @keyframes creceTH1 {
+    from {
+      stroke-dasharray: 0 750;
+    }
+    to {
+      stroke-dasharray: 750 0;
+      stroke: red;
+      stroke-width: 60;
+    }
+  }
+  .cucutax {
+    animation: creceTH2 1s linear 4 forwards;
+    animation-delay: 1s;
+  }
+  @keyframes creceTH2 {
+    from {
+      stroke-dasharray: 0 100;
+    }
+    to {
+      stroke-dasharray: 100 0;
+      stroke: green;
+      stroke-width: 60;
+    }
+  }
+  .aspa2x {
+    animation: creceTH3 1s linear 4 forwards;
+    animation-delay: 2s;
+  }
+  @keyframes creceTH3 {
+    from {
+      stroke-dasharray: 0 150;
+    }
+    to {
+      stroke-dasharray: 150 0;
+      stroke: blue;
+      stroke-width: 60;
+    }
+  }
+  .bogota1x {
+    animation: creceTH4 1s linear 4 forwards;
+    animation-delay: 3s;
+  }
+  @keyframes creceTH4 {
+    from {
+      stroke-dasharray: 0 400;
+    }
+    to {
+      stroke-dasharray: 400 0;
+      stroke: orange;
+      stroke-width: 60;
+    }
+  }
+  .costax {
+    animation: creceTH5 1s linear 4 forwards;
+    animation-delay: 4s;
+  }
+  @keyframes creceTH5 {
+    from {
+      stroke-dasharray: 0 50;
+    }
+    to {
+      stroke-dasharray: 50 0;
+      stroke: blueviolet;
+      stroke-width: 60;
+    }
+  }
+  .bogota2x {
+    animation: creceTH6 linear 4 forwards;
+    animation-delay: 5s;
+  }
+  @keyframes creceTH6 {
+    from {
+      stroke-dasharray: 0 50;
+    }
+    to {
+      stroke-dasharray: 50 0;
+      stroke: black;
+      stroke-width: 60;
+    }
+  }
+  .araucax {
+    animation: creceTH7 2s linear 4 forwards;
+    animation-delay: 6s;
+  }
+  @keyframes creceTH7 {
+    from {
+      stroke-dasharray: 0 1600;
+    }
+    to {
+      stroke-dasharray: 1600 0;
+      stroke: rgb(1, 65, 31);
+      stroke-width: 40;
+    }
+  }
+
+
+.caja-vacia{
+height: 15px;
+
+}
+
+  .contAnimatDadAndSkills {
+    grid-template-rows: 15px 50px auto;
+    grid-template-columns: 15px 1fr 10px 1fr 3fr;
+  }
+  .containerDad1 {
+    padding: 0 0 20px 0;
+  }
+  .containerDad2 {
+    padding: 0 0 20px 0;
+    background: var(--color-darkblue1);
+  }
+  .dadSVG1 {
+    padding-top: 20px;
+  }
+  .dadSVG2 {
+    padding-top: 20px;
+  }
+  .queEsDad1 {
+    height: auto;
+    padding-top: 10px;
+  }
+  .queEsDad1 h4 {
+    padding-top: 5px;
+    font-size: .6em;
+  }
+  .queEsDad1 p {
+    font-size: .5em;
+  }
+  .queEsDad1 a {
+    text-decoration: none.5em;
+  }
+  .queEsDad2 {
+    height: auto;
+    padding-top: 10px;
+  }
+  .queEsDad2 h4 {
+    padding-top: 5px;
+    font-size: .6em;
+  }
+  .queEsDad2 p {
+    font-size: .5em;
+  }
+  .skills {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .skills h4 {
+    font-size: .8em;
+    margin-top: 0;
+  }
+  .skills p {
+    font-size: .6em;
+  }
+
+
+
+  /* La llave sguiente cierra el queryxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+}

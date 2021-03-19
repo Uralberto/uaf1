@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2785" height="199.5" viewBox="0 0 2785 199.5">
+  <defs>
+    <style>
+      .cls1, .cls2, .cls3, .cls4 {
+        fill: none;
+      }
+
+      .cls1, .cls2, .cls5, .cls7 {
+        stroke: #262b59;
+      }
+
+      .cls1 {
+        stroke-dasharray: 10;
+      }
+
+      .cls2, .cls3 {
+        stroke-dasharray: 10 5;
+      }
+
+      .cls3 {
+        stroke: #494d74;
+      }
+
+      .cls4 {
+        stroke: #2433b8;
+        stroke-width: 2px;
+      }
+
+      .cls5, .cls6, .cls7 {
+        fill: #707070;
+        font-family: SegoeUI, Segoe UI;
+        letter-spacing: 0.002em;
+      }
+
+      .cls5 {
+        font-size: 16px;
+      }
+
+      .cls6 {
+        stroke: #272839;
+      }
+
+      .cls6, .cls7 {
+        font-size: 1em;
+        font-weight: 100;
+      }
+
+.cls5{
+  font-size: 1.5em;
+  
+}
+
+
+
+    </style>
+  </defs>
+  <g id="year-height" transform="translate(255.5 -5952)">
+    <path id="lineX4" class="cls1" d="M-265.293,4238.838H2457.863" transform="translate(49.793 1735)"/>
+    <path id="lineX3" class="cls1" d="M-265.293,4238.838H2457.863" transform="translate(49.793 1781)"/>
+    <path id="lineX2" class="cls1" d="M-265.293,4238.838H2457.863" transform="translate(49.793 1826)"/>
+    <path id="lineX1" class="cls1" d="M-265.293,4238.838H2457.863" transform="translate(49.793 1875)"/>
+    <path id="lineY13" class="cls2" d="M-42.915,4238.838v140.45" transform="translate(50 1735)"/>
+    <path id="lineY12" class="cls3" d="M-42.915,4238.838v140.45" transform="translate(-172 1735)"/>
+    <path id="lineY11" class="cls2" d="M-42.915,4238.838v140.45" transform="translate(278 1735)"/>
+    <path id="lineY10" class="cls2" d="M-42.915,4238.838v140.45" transform="translate(506 1734)"/>
+    <path id="lineY9" class="cls2" d="M-42.915,4238.838v140.45" transform="translate(734 1734)"/>
+    <path id="lineY8" class="cls2" d="M-42.915,4238.838v140.45" transform="translate(962 1735)"/>
+    <path id="lineY7" class="cls2" d="M-42.915,4238.838v140.45" transform="translate(1190 1735)"/>
+    <path id="lineY6" class="cls2" d="M-42.915,4238.838v140.45" transform="translate(1418 1735)"/>
+    <path id="lineY5" class="cls2" d="M-42.915,4238.838v140.45" transform="translate(1646 1735)"/>
+    <path id="lineY4" class="cls2" d="M-42.915,4238.838v140.45" transform="translate(1874 1734)"/>
+    <path id="lineY3" class="cls2" d="M-42.915,4238.838v140.45" transform="translate(2102 1734)"/>
+    <path id="lineY2" class="cls2" d="M-42.915,4238.838v140.45" transform="translate(2330 1734)"/>
+    <path id="lineY1" class="cls2" d="M-42.915,4238.838v140.45" transform="translate(2558 1734)"/>
+    <path id="tiempo-alt" class="cls4" d="M-264.25,4308.667l727,.4v53.688H546v-52l117.956-1.687v-50.717H1012.25V4374h41.012V4258.345h25.988V4370l1349.5-.25" transform="translate(49.25 1733)"/>
+    <text id="Tiempo_años_" data-name="Tiempo (años)" class="cls5" transform="translate(-117 6130)"><tspan x="0" y="17">Tiempo (años)</tspan></text>
+    <text id="Altitud_msnm_" data-name="Altitud(msnm)" class="cls5" transform="translate(-254.5 6120) rotate(-90)"><tspan x="0" y="17">Altitud(msnm)</tspan></text>
+    <text id="_0000" data-name="0000" class="cls6" transform="matrix(1, 0, 0, -1, -210, 6108)"><tspan x="0" y="11">0000</tspan></text>
+    <text id="_1000" data-name="1000" class="cls6" transform="translate(-212 6047)"><tspan x="0" y="11">1000</tspan></text>
+    <text id="_1970" data-name="1970" class="cls7" transform="translate(240 6107.5) rotate(-90)"><tspan x="0" y="11">1970</tspan></text>
+    <text id="_1980" data-name="1980" class="cls7" transform="translate(696 6107.5) rotate(-90)"><tspan x="0" y="11">1980</tspan></text>
+    <text id="_1990" data-name="1990" class="cls7" transform="translate(1152 6099.5) rotate(-90)"><tspan x="0" y="11">1990</tspan></text>
+    <text id="_2000" data-name="2000" class="cls7" transform="translate(1608 6099.5) rotate(-90)"><tspan x="0" y="11">2000</tspan></text>
+    <text id="_2010" data-name="2010" class="cls7" transform="translate(2065 6095.5) rotate(-90)"><tspan x="0" y="11">2010</tspan></text>
+    <text id="_2020" data-name="2020" class="cls7" transform="translate(2519 6099.5) rotate(-90)"><tspan x="0" y="11">2020</tspan></text>
+    <text id="_2000-2" data-name="2000" class="cls6" transform="translate(-210 6003)"><tspan x="0" y="11">2000</tspan></text>
+    <text id="_3000" data-name="3000" class="cls7" transform="matrix(1, 0, 0, -1, -210, 5971
+    )"><tspan x="0" y="11">3000</tspan></text>
+  </g>
+</svg>

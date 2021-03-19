@@ -1,0 +1,450 @@
+body {
+    font-weight: lighter;
+}
+
+.marca, .linkYo {
+    opacity: 0;
+}
+
+.logo {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    left: 15px;
+    z-index: 2;
+}
+
+.logo:hover {
+    background-image: url("../img/logoCaraAmarilla.png");
+    background-size: 100%;
+}
+
+.cvContainer {
+    display: grid;
+    grid-template-columns: minmax(auto, 1024px);
+    justify-content: center;
+}
+
+.cv {
+    display: grid;
+    padding: 0px 25px 0 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .8fr auto auto auto auto;
+    background: var(--color-gray2);
+    grid-template-areas: "cabecera cabecera cabecera" "objetivoProf objetivoProf objetivoProf" "contactoYareasInteres experiencia experiencia" "contactoYareasInteres historiaAcadem historiaAcadem" "contactoYareasInteres infoAdicional infoAdicional"
+}
+
+/* Inicia cabecera xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+.cabecera {
+    align-items: center;
+    display: grid;
+    border-bottom: 1px solid rgba(37, 37, 85, 0.281);
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-area: cabecera;
+    grid-template-columns: 1fr 100px;
+    grid-template-areas: "miProfMiNombre avatar"
+}
+
+.miProfMiNombre {
+    grid-area: miProfMiNombre;
+}
+
+.miProfMiNombre h4 {
+    margin: 5px 0 5px 0;
+}
+
+.avatar {
+    grid-area: avatar;
+    height: 95px;
+    background: url(../img/Avatar.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/* Termina  cabecera xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* Inicia objetivo profesional xxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+.objetivoProf {
+    grid-area: objetivoProf;
+    background: url(../img/backgroundObjetivoProf.png) no-repeat;
+    border-bottom: 1px solid rgba(37, 37, 85, 0.281);
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "objetivoProf-titulo ." "objetivoProf-contenido . "
+}
+
+.objetivoProf-titulo {
+    grid-area: objetivoProf-titulo;
+    margin: 20px 0 0 0;
+}
+
+.objetivoProf-contenido {
+    grid-area: objetivoProf-contenido;
+    font-size: .7em;
+}
+
+/* Termina objetivo profesional xxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* Inicia contacto y areas de interes xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+.contactoYareasInteres {
+    grid-area: contactoYareasInteres;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "datosContacto" "areasInteres"
+}
+
+.datosContacto {
+    grid-area: datosContacto;
+    padding-top: 100px;
+    padding-right: 10px;
+    border-bottom: 1px solid rgba(37, 37, 85, 0.281);
+}
+
+.datosContacto p {
+    font-size: .7em;
+}
+
+.datosContacto a {
+    text-decoration: none;
+}
+
+.areasInteres {
+    grid-area: areasInteres;
+}
+
+.areasInteres p {
+    font-size: .7em;
+}
+
+/* Terminacontacto y areas de interes xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+/* Inicia experinecia xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+.experiencia {
+    grid-area: experiencia;
+    padding-left: 15px;
+    border-left: 1px solid rgba(37, 37, 85, 0.281);
+    border-bottom: 1px solid rgba(37, 37, 85, 0.281);
+    padding-top: 15px;
+    padding-bottom: 10px;
+    display: flex;
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "vinetaExp experienciaProf-titulo " " . experienciaProf1" " . experienciaProf2" " . experienciaProf3"
+}
+
+.vinetaExp {
+    grid-area: vinetaExp;
+    background: url(../img/logoVineta.png) no-repeat;
+    background-size: 18px 18px;
+    background-position: 0 28px;
+}
+
+.experienciaProf-titulo {
+    grid-area: experienciaProf-titulo;
+    padding: 8px 10px 5px 10px;
+    margin-bottom: 0;
+}
+
+.experienciaProf-titulo h5 {
+    margin: 20px 0 0 0;
+}
+
+.experienciaProf1 {
+    grid-area: experienciaProf1;
+    padding: 10px 10px 0 10px;
+}
+
+.experienciaProf1-titulo {
+    font-size: .7em;
+    padding: 10px 10px 10px 0;
+    margin: 0 0 0 0;
+}
+
+.experienciaProf1-descripc {
+    font-size: .7em;
+    padding: 0 10px 0 0;
+    margin: 0 0 0 0;
+}
+
+.experienciaProf2 {
+    grid-area: experienciaProf2;
+    font-size: .7em;
+    padding: 5px 10px 5px 10px;
+}
+
+.experienciaProf3 {
+    grid-area: experienciaProf3;
+    padding: 5px 10px 5px 10px;
+}
+
+.experienciaProf3-titulo {
+    font-size: .7em;
+    padding: 10px 10px 10px 0;
+    margin: 0 0 0 0;
+}
+
+.experienciaProf3-descripc {
+    font-size: .7em;
+    padding: 0 10px 0 0;
+    margin: 0 0 0 0;
+}
+
+/* Termina experiencia xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+/* Inicia historia académica xxxxxxxxxxxxxxxxxxxxx */
+
+.historiaAcadem {
+    grid-area: historiaAcadem;
+    border-bottom: 1px solid rgba(37, 37, 85, 0.281);
+    border-left: 1px solid rgba(37, 37, 85, 0.281);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: " vinetaHistoriaAcadem historiaAcadem-titulo" " . historiaAcadem1-descripc" " . historiaAcadem2-descripc";
+}
+
+.vinetaHistoriaAcadem {
+    grid-area: vinetaHistoriaAcadem;
+    background: url(../img/logoVineta.png) no-repeat;
+    background-size: 18px 18px;
+    background-position: 0 30px;
+}
+
+.historiaAcadem-titulo {
+    grid-area: historiaAcadem-titulo;
+    padding: 30px 10px 5px 10px;
+    margin: 0 0 0 0;
+}
+
+.historiaAcadem1-descripc {
+    grid-area: historiaAcadem1-descripc;
+    font-size: .7em;
+    padding: 0 10px 0 10px;
+    margin: 10px 0 0 0;
+}
+
+.historiaAcadem2-descripc {
+    grid-area: historiaAcadem2-descripc;
+    font-size: .7em;
+    padding: 0 10px 0 10px;
+    margin: 10px 0 0 0;
+}
+
+/* Termina historia académica xxxxxxxxxxxxxxxxxxxxx */
+
+/* Inicia info adicional xxxxxxxxxxxxxxxxxxxxx */
+
+.infoAdicional {
+    grid-area: infoAdicional;
+    border-left: 1px solid rgba(37, 37, 85, 0.281);
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "vinetaInfoAdicional  infoAdicional-titulo" " . infoAdicional-idioma" " .  infoAdicional-personal";
+}
+
+.vinetaInfoAdicional {
+    grid-area: vinetaInfoAdicional;
+    background: url(../img/logoVineta.png) no-repeat;
+    background-size: 18px 18px;
+    background-position: 0 30px;
+}
+
+.infoAdicional-titulo {
+    grid-area: infoAdicional-titulo;
+    padding: 30px 10px 5px 10px;
+    margin: 0 0 0 0;
+}
+
+.infoAdicional-idioma {
+    grid-area: infoAdicional-idioma;
+    font-size: .7em;
+    padding: 0 10px 0 10px;
+    margin: 10px 0 0 0;
+}
+
+.infoAdicional-personal {
+    grid-area: infoAdicional-personal;
+    font-size: .7em;
+    padding: 0 10px 0 10px;
+    margin: 10px 0 0 0;
+}
+
+/* Aquí comienza media query xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+@media screen and (max-width: 768px) {
+    .home {
+        padding-left: 10px;
+    }
+    .cv {
+        padding: 0px 10px 0 10px;
+    }
+    .logo {
+        position: relative;
+        height: 40px;
+        width: 40px;
+        left: 0;
+    }
+    .cabecera {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        height: 45px;
+        grid-template-columns: 2fr 50px;
+    }
+    .miProfMiNombre {
+        font-size: .65em;
+    }
+    .miProfMiNombre h4 {
+        margin: 1px 0 1px 0;
+    }
+    .avatar {
+        height: 45px;
+        width: 45px;
+    }
+    .objetivoProf {
+        background-size: 150% 100%;
+        padding-bottom: 5px;
+        grid-template-rows: auto;
+        grid-template-areas: "objetivoProf-titulo ." "objetivoProf-contenido objetivoProf-contenido ";
+    }
+    .objetivoProf-titulo {
+        font-size: .6em;
+        margin: 10px 0 0 0;
+    }
+    .objetivoProf-contenido {
+        font-size: .5em;
+    }
+    .contactoYareasInteres {
+        grid-template-columns: 110px;
+        display: block;
+    }
+    .datosContacto {
+        text-decoration: none;
+    }
+    .datosContacto-titulo {
+        font-size: .6em;
+    }
+    .datosContacto p {
+        font-size: .5em;
+        text-decoration: none;
+    }
+    .datosContacto-lista a {
+        text-decoration: none;
+    }
+    .areasInteres-titulo {
+        font-size: .5em;
+    }
+    .areasInteres p {
+        font-size: .5em;
+    }
+    .experiencia {
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        grid-template-columns: 7px 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+    .vinetaExp {
+        background-size: 7px 7px;
+        background-position: 0 15px;
+    }
+    .experienciaProf-titulo h5 {
+        font-size: .6em;
+        margin: 5px 0 0 0;
+        padding-left: 0;
+    }
+    .experienciaProf1 {
+        padding: 10px 0px 5px 10px;
+    }
+    .experienciaProf1-titulo {
+        font-size: .5em;
+        padding: 5px 0px 5px 0;
+        margin: 0 0 0 0;
+    }
+    .experienciaProf1-descripc {
+        font-size: .5em;
+    }
+    .experienciaProf2 {
+        font-size: .5em;
+        padding: 5px 0px 5px 10px;
+    }
+    .experienciaProf3 {
+        padding: 5px 0px 5px 10px;
+    }
+    .experienciaProf3-titulo {
+        font-size: .5em;
+        padding: 10px 0px 10px 0;
+        margin: 0 0 0 0;
+    }
+    .experienciaProf3-descripc {
+        font-size: .5em;
+        padding: 0 10px 0 0;
+    }
+    .historiaAcadem {
+        padding-top: 0;
+        padding-left: 5px;
+        padding-bottom: 5px;
+        padding-right: 0px;
+        grid-template-columns: 7px 1fr;
+    }
+    .vinetaHistoriaAcadem {
+        background-size: 7px 7px;
+        background-position: 0 17px;
+    }
+    .historiaAcadem-titulo {
+        padding: 15px 0px 0 10px;
+        font-size: .6em;
+    }
+    .historiaAcadem1-descripc {
+        font-size: .5em;
+        padding: 0 0 0 10px;
+        margin: 10px 0 0 0;
+    }
+    .historiaAcadem2-descripc {
+        font-size: .5em;
+        padding: 0 0 5px 10px;
+        margin: 10px 0 0 0;
+    }
+    .infoAdicional {
+        padding-top: 0;
+        padding-left: 5px;
+        padding-bottom: 5px;
+        padding-right: 0px;
+        grid-template-columns: 7px 1fr;
+    }
+    .vinetaInfoAdicional {
+        background-size: 7px 7px;
+        background-position: 0  22px;
+    }
+    .infoAdicional-titulo {
+        padding: 20px 0 0 10px;
+        margin: 0 0 0 0;
+        font-size: .6em;
+    }
+    .infoAdicional-idioma {
+        font-size: .5em;
+        padding: 0 0 0 10px;
+        margin: 10px 0 0 0;
+    }
+    .infoAdicional-personal {
+        font-size: .5em;
+        padding: 0 0 10px 10px;
+        margin: 10px 0 0 0;
+    }
+}
